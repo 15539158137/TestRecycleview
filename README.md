@@ -15,7 +15,8 @@
 
 </RelativeLayout>
 2.设置recycleview的adapter
-  final Refresh_Loadmore_Layout refresh_loadmore_layout = (Refresh_Loadmore_Layout) findViewById(R.id.refresh);
+
+    final Refresh_Loadmore_Layout refresh_loadmore_layout = (Refresh_Loadmore_Layout) findViewById(R.id.refresh);
         handler = new Handler();
         all = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
@@ -24,8 +25,10 @@
         final SimpleRecycleviewAdater simpleRecycleviewAdater = new SimpleRecycleviewAdater(all, MainActivity.this);
         refresh_loadmore_layout.setAdapter(simpleRecycleviewAdater);
         
-3.刷新和加载的回调
-  refresh_loadmore_layout.setRefreshTouchEvent(new RefreshRecycleview.RefreshTouchEvent() {
+        
+ 3.刷新和加载的回调
+
+     refresh_loadmore_layout.setRefreshTouchEvent(new RefreshRecycleview.RefreshTouchEvent() {
             @Override
             public void onRefrshStart() {
                 Log.e("refreshRecycleview", "onRefrshStart");
