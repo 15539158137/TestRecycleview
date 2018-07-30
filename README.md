@@ -1,5 +1,6 @@
 # TestRecycleview
 adapter使用自己的adapter。
+
 1.xml引入
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
